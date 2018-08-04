@@ -108,7 +108,7 @@ function apply_patch(){
 						patch -p0 < $selected_patch
 				fi
 			done
-			echo -ne "Apply another patch? [y/n]"
+			echo -ne "Apply another patch? [y/n]: "
 			read applyanother
 			if [[ $applyanother == "y" ]]
 				then
