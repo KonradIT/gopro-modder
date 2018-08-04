@@ -1,4 +1,4 @@
-![](gp-patcher.png)
+![](gp-patcher.jpg)
 
 ## Patches available:
 
