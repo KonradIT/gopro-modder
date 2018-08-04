@@ -1,8 +1,16 @@
 ![](gp-patcher.jpg)
 
+## Disclaimer:
+
+Everything here is unsupported by GoPro. Do not ask them for support when using modified app.
+
+I am not affiliated or endorsed by GoPro, Inc. in any way. 
+
+Proceed with caution.
+
 ## Patches available:
 
-- Remove Fusion phone restrinction
+- Remove Fusion phone restrinction, which is limited as of now.
 - Permanently show offline button regardless of internet connection
 
 ## Todo:
