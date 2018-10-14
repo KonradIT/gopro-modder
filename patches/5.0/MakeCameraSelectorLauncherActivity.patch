@@ -1,0 +1,33 @@
+--- modded/AndroidManifest.xml	2018-10-14 14:19:21.779003993 +0200
++++ "../GoPro 5.0/AndroidManifest.xml"	2018-10-14 13:57:45.000000000 +0200
+@@ -43,10 +43,6 @@
+         <activity android:launchMode="singleTop" android:name="com.gopro.smarty.feature.home.LauncherActivity" android:screenOrientation="portrait" android:theme="@style/SmartyTheme"/>
+         <activity-alias android:name="com.gopro.smarty.activity.HomeActivity" android:targetActivity="com.gopro.smarty.feature.home.LauncherActivity">
+             <intent-filter>
+-                <action android:name="android.intent.action.MAIN"/>
+-                <category android:name="android.intent.category.LAUNCHER"/>
+-            </intent-filter>
+-            <intent-filter>
+                 <data android:scheme="ampb2a932aeddbf0f11bae9573-a36b3938-de77-11e6-dbf9-002b77fd4391"/>
+                 <action android:name="android.intent.action.VIEW"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+@@ -92,7 +88,11 @@
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+         </activity>
+-        <activity android:label="" android:launchMode="singleTop" android:name="com.gopro.smarty.feature.camera.connect.CameraSelectorActivity" android:parentActivityName="com.gopro.smarty.feature.home.SoftTubesHomeActivity" android:theme="@style/Theme.GoPro.Dark">
++        <activity android:icon="@mipmap/ic_launcher" android:label="@string/app_label" android:launchMode="singleTop" android:name="com.gopro.smarty.feature.camera.connect.CameraSelectorActivity" android:parentActivityName="com.gopro.smarty.feature.home.SoftTubesHomeActivity" android:theme="@style/Theme.GoPro.Dark">
++        <intent-filter>
++                <action android:name="android.intent.action.MAIN"/>
++                <category android:name="android.intent.category.LAUNCHER"/>
++            </intent-filter>
+             <intent-filter>
+                 <action android:name="android.intent.action.VIEW"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+@@ -399,4 +399,4 @@
+         <service android:name="com.gopro.wsdk.service.streaming.StreamPlayerService"/>
+         <service android:name="com.gopro.wsdk.preview.LivePreviewServiceCache"/>
+     </application>
+-</manifest>
+\ No newline at end of file
++</manifest>

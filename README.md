@@ -10,13 +10,19 @@ Proceed with caution.
 
 ## Patches available:
 
+### 5.0:
+
+- Remove Fusion phone restrinction, which is limited as of now.
+- Make Camera Selector the Main Launcher Activity
+
+### 4.5.2:
+
 - Remove Fusion phone restrinction, which is limited as of now.
 - Permanently show offline button regardless of internet connection
 
 ## Todo:
 
 - Remove "introducing_quik_message1"
-- Make camera chooser launcher activity
 - Photo/video downloads to SD card
 
 Submit ideas by making a new issue.
@@ -34,4 +40,4 @@ PRs welcome!
 
 ## Compatibility:
 
-Tested on GoPro app com.gopro.smarty v4.5.2
+Tested on GoPro app com.gopro.smarty Versions: v5.0, v4.5.2

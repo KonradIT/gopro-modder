@@ -12,7 +12,7 @@ echo ""
 
 ## Pre flight:
 command -v patch >/dev/null 2>&1 || { echo "Patch not installed" >&2; err=1; }
-command -v apktool >/dev/null 2>&1 || { echo "Patch not installed" >&2; err=1; }
+command -v apktool >/dev/null 2>&1 || { echo "Apktool not installed" >&2; err=1; }
 if [[ $1 == "" ]]
 	then
 		echo "main.sh -i [original gopro APK] -k [key] -n [key name] -o [modded apk out]"
@@ -70,9 +70,10 @@ function decompile_apk(){
 
 }
 function apply_patch(){
+	APP_VERSION=$(cat modded/apktool.yml | grep versionName: | grep -o "'.*'" | sed "s/'//g")
 	COUNT=0
 	declare -a arr
-	for i in patches/*
+	for i in patches/$APP_VERSION/*
 		do
 		
 		echo [$COUNT] - $i
@@ -85,7 +86,7 @@ function apply_patch(){
 		then
 			#apply all
 			echo ">> Applying all patches"
-			for i in patches/*
+			for i in patches/$APP_VERSION/*
 				do
 				echo $i
 				if [[ "$i" == *sh ]]
