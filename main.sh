@@ -134,7 +134,7 @@ function sign_apk(){
 	then
 		jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $key $out_apk $key_name
 	else
-		echo ">> Modified APK name not specified, run script again with -o flag"
+		echo ">> KeyStore filename not specified, run script again with -k flag"
 	fi
 }
 ## Main
