@@ -1,0 +1,11 @@
+--- modded/smali_classes2/com/gopro/smarty/feature/system/c/a.smali	2018-11-16 12:45:51.702687075 +0100
++++ modded/smali_classes2/com/gopro/smarty/feature/system/c/a.smali	2018-11-16 13:08:06.039044409 +0100
+@@ -94,7 +94,7 @@
+ 
+     const-string v2, "Displays feedback button in side nav"
+ 
+-    const/4 v3, 0x0
++    const/4 v3, 0x1
+ 
+     .line 14
+     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
