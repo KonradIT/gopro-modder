@@ -70,7 +70,8 @@ function decompile_apk(){
 
 }
 function apply_patch(){
-	APP_VERSION=$(cat modded/apktool.yml | grep versionName: | grep -o "'.*'" | sed "s/'//g")
+	APP_VERSION=$(cat modded/apktool.yml | grep versionName: | cut -d ":" -f 2 | sed "s/ //g")
+	echo $APP_VERSION
 	COUNT=0
 	declare -a arr
 	for i in patches/$APP_VERSION/*

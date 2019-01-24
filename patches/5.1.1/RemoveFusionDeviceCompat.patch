@@ -1,0 +1,11 @@
+--- "modded/smali_classes2/com/gopro/smarty/domain/model/fileStore/FusionSupportedDevices.smali"	2018-08-04 18:27:53.101645620 +0200
++++ modded/smali_classes2/com/gopro/smarty/domain/model/fileStore/FusionSupportedDevices.smali	2018-08-04 12:57:25.214295129 +0200
+@@ -156,7 +156,7 @@
+     .line 57
+     sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+ 
+-    iget-object v4, v2, Lcom/gopro/smarty/domain/model/fileStore/FusionSupportedDevices$b;->a:Ljava/lang/String;
++    sget-object v4, Landroid/os/Build;->MODEL:Ljava/lang/String;
+ 
+     invoke-virtual {v3, v4}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+ 
