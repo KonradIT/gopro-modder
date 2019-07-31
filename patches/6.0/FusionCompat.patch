@@ -1,0 +1,11 @@
+--- smali_classes2/com/gopro/smarty/domain/h/c/c.smali	2019-08-01 00:06:19.827617507 +0200
++++ c.smali	2019-08-01 00:52:21.042651266 +0200
+@@ -162,7 +162,7 @@
+     .line 57
+     sget-object v4, Landroid/os/Build;->MODEL:Ljava/lang/String;
+ 
+-    iget-object v5, v3, Lcom/gopro/smarty/domain/h/c/c$c;->a:Ljava/lang/String;
++    sget-object v5, Landroid/os/Build;->MODEL:Ljava/lang/String;
+ 
+     invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+ 

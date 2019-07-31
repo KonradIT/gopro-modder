@@ -1,0 +1,11 @@
+--- smali_classes3/com/gopro/smarty/feature/system/c/c.smali	2019-08-01 00:06:21.454259818 +0200
++++ c.smali	2019-08-01 00:53:20.619271456 +0200
+@@ -70,7 +70,7 @@
+     .line 12
+     new-instance v0, Lcom/gopro/smarty/feature/system/c/c$a;
+ 
+-    const/4 v1, 0x0
++    const/4 v1, 0x1
+ 
+     .line 14
+     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
